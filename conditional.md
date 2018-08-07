@@ -5,33 +5,33 @@
 Não há novidade neste comando para quem já sabe programar. Podemos omitir os parenteses *(* *)* da condição e se o **if** não tiver próxima condição para o fluxo ou o bloco terminar com break, goto ou return é desnecessário a instrução else.
 ```go
 age := 30
-if age == 30{
-  fmt.Println("é 30")
+if age == 30 {
+    fmt.Println("é 30")
 }
 
 ///Usando o return
 var resultado int
-if 1+1 == 2{
-  resultado = 10
-  return resultado 
+if 1+1 == 2 {
+    resultado = 10
+    return resultado
 }
 
 ///Exemplo com else
 idade = 30
-if idade > 18{
-  fmt.Println("Você já pode beber cerveja")
-}else{
-  fmt.Println("Fica no leite bebê")
+if idade > 18 {
+    fmt.Println("Você já pode beber cerveja")
+} else {
+    fmt.Println("Fica no leite bebê")
 }
 
 ///Else if também temos um exemplo
 linguagem = "GO"
 if linguagem == "Java" {
-  fmt.Println("Hum.... precisa de mais memória")
-}else if linguagem == "GO" {
-  fmt.Println("Parabéns GO te trará muitas felicidades")
-}else{
-  fmt.Println("Eita.... só não me fala que é ASP")
+    fmt.Println("Hum.... precisa de mais memória")
+} else if linguagem == "GO" {
+    fmt.Println("Parabéns GO te trará muitas felicidades")
+} else {
+    fmt.Println("Eita.... só não me fala que é ASP")
 }
 ```
 
@@ -44,6 +44,8 @@ switch linguagem {
     fmt.Println("Memória por favor")
   case "PHP":
     fmt.Println("Fazemos fazer spaghetti")
+  case "RUBY":
+    fmt.Println("Baixa um gem para isso")
   case "GO":
     fmt.Println("Yeah")
 }
@@ -56,7 +58,9 @@ switch linguagem {
     fmt.Println("Memória por favor")
   case "PHP":
     fmt.Println("Fazemos fazer spaghetti")
-  case "GO","Elixir":
+  case "RUBY":
+    fmt.Println("Baixa um gem para isso")
+  case "GO", "Elixir":
     fmt.Println("Yeah")
   default:
     fmt.Println("Eita.... começo a pensar que é ASP")
@@ -70,8 +74,12 @@ case linguagem == "JAVA":
     fmt.Println("Memória por favor")
 case linguagem == "PHP":
     fmt.Println("Fazemos fazer spaghetti")
+case linguagem == "RUBY":
+    fmt.Println("Baixa um gem para isso")
 case linguagem == "GO" || linguagem =="elixir":
     fmt.Println("Yeah")
 }
 ```
+
 ___
+

@@ -8,12 +8,12 @@ for i := 0; i < 10; i++ { // for valor; condição; incremento {
 }
 
 //Podemos criar for sem o incremento
-for  contador < 5 { // for valor; condição; {
+for contador < 5 { // for valor; condição; {
 }
 
 //for estilo while
 contador := 0
-for  contador < 5 {
+for contador < 5 {
     fmt.Println(contador)
     contador++
 }
